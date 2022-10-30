@@ -60,6 +60,7 @@ body {
     padding: 0px 15px;
     justify-content: center;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .container_fixed {
@@ -164,23 +165,23 @@ body {
         margin: 0;
     }
     .container_fixed {
-        width: calc(100vw - 30px);
+        width: 100%;
     }
     .about-card {
-        max-width: calc((100vw - 66px) / 3);
+        max-width: calc((100% - 36px) / 3);
         max-height: 450px;
     }
 }
 
 @media (max-width: 960px) {
     .container_fixed {
-        width: calc(100vw - 30px);
+        width: calc(100%);
     }
     .container_invisible {
         display: flex;
     }
     .about-card {
-        max-width: calc((100vw - 50px) / 2);
+        max-width: calc((100% - 20px) / 2);
     }
     .about-card__header {
         font-size: 25px;
@@ -195,15 +196,19 @@ body {
         overflow: hidden;
     }
     .container_fixed {
-        width: calc((100vw - 60px) * 6 + 75px);
+        width: calc((100% - 30px) * 6 + 90px);
         flex-direction: row;
         justify-content: unset;
     }
-    .container_invisible {
-        display: none;
+    .container_swipeble {
+        width: 50%;
+        padding-left: 15px;
     }
     .about-card {
-        max-width: calc(100vw - 60px);
+        max-width: calc((100% - 45px) / 3);
+    }
+    .container_invisible {
+        display: none;
     }
     .about-card_invisible {
         display: flex;
@@ -211,10 +216,4 @@ body {
     .container_horizontal_margined {
         margin: 0;
     }
-    .container_swipeble {
-        width: calc((100vw - 60px) * 3 + 45px);
-        padding-left: 15px;
-    }
 }
-
-translateX(calc(((100vw - 60px) + 15px) * -1))
