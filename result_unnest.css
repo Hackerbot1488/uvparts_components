@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Calibri";
+    src: url("//f.nodacdn.net/498500") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("//f.nodacdn.net/498501") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("//f.nodacdn.net/499231") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("//f.nodacdn.net/499230") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.container_vertical {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.container_horizontal {
+    justify-content: space-between;
+}
+
+.container_centred {
+    justify-content: center;
+}
+
+.swipe-buttons {
+    display: none;
+    margin-top: 20px;
+}
+
+.swipe-buttons__button {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+
+    background: #D8D8D8;
+}
+
+.swipe-buttons__button:last-child {
+    margin-right: 0;
+}
+
+.swipe-buttons__button_active {
+    background: #FDDC6E;
+    cursor: auto;
+}
