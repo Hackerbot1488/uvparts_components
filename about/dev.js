@@ -14,7 +14,7 @@ function setActiveSlideButton (button) {
 }
 
 function swipeSlide () {
-    swipeWrapper.style = `transform: translateX(calc((((50% - 45px) / 3) + 15px) * ${-currentActiveSlide}));`
+    swipeWrapper.style = `transform: translateX(calc((((50% - 37.5px) / 3) + 15px) * ${-currentActiveSlide}));`
 }
 
 window.addEventListener('resize', () => {
