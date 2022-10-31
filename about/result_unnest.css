@@ -1,6 +1,5 @@
 .about--container_wrapper {
     margin: 40px 0px;
-    padding: 0px 15px;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
@@ -115,6 +114,12 @@
     z-index: 2;
 }
 
+.about-card__link {
+    color: #314AD0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (max-width: 1280px) {
     .about--container_fixed {
         width: 100%;
@@ -145,15 +150,14 @@
         overflow: hidden;
     }
     .about--container_fixed {
-        width: calc((100% - 30px) * 6 + 90px);
+        width: calc((100%) * 6 + 75px);
     }
     .about--swipe-wrapper {
         flex-direction: row;
-        justify-content: unset;
+        justify-content: space-between;
     }
-    .container_swipeble {
-        width: 50%;
-        padding-left: 15px;
+    .about--container_swipeble {
+        width: calc(50% - 7.5px);
     }
     .swipe-buttons {
         display: flex;
