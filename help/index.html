@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Help</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/help/dev.css'>
+</head>
+<body>
+    <div class="container container_vertical help--container_wrapper">
+        <div class="container container_horizontal help--container__header">Обучающий материал</div>
+        <div class="container help--container_fixed">
+            <div class="container help--container_mixin_horizontal help--swipe-wrapper" id="help--swipe-wrapper">
+                <div class="container container_horizontal help--container_horizontal_margined help--container_swipeble">
+                    <div class="help--card">
+                        <a class="help--card__link" href="/how_to_find"></a>
+                        <img class="help--card__image" src="/help/img/Search.svg">
+                        <h6 class="help--card__header">Как найти деталь</h6>
+                    </div>
+                    <div class="help--card">
+                        <a class="help--card__link" href="/how_to_order"></a>
+                        <img class="help--card__image" src="/help/img/Cart.svg">
+                        <h6 class="help--card__header">Как заказать</h6>
+                    </div>
+                </div>
+                <div class="container container_horizontal help--container_swipeble">
+                    <div class="help--card">
+                        <a class="help--card__link" href="/funds"></a>
+                        <img class="help--card__image" src="/help/img/Credit.svg">
+                        <h6 class="help--card__header">Способы оплаты</h6>
+                    </div>
+                    <div class="help--card">
+                        <a class="help--card__link" href="/delivery"></a>
+                        <img class="help--card__image" src="/help/img/Truck.svg">
+                        <h6 class="help--card__header">Доставка</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container_horizontal container_centred">
+            <div class="container container_horizontal swipe-buttons" id="help-swipe-buttons">
+                <span class="swipe-buttons__button swipe-buttons__button_active" data-position="help-0" data-number="0"></span>
+                <span class="swipe-buttons__button" data-position="help-1" data-number="1"></span>
+                <span class="swipe-buttons__button" data-position="help-2" data-number="2"></span>
+                <span class="swipe-buttons__button" data-position="help-3" data-number="3"></span>
+            </div>
+        </div>
+    </div>
+    <script src="/swipe.js"></script>
+    <script src="/help/dev.js" type="module"></script>
+</body>
+</html>
